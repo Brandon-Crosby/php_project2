@@ -17,23 +17,3 @@
       </div>
 </body>
 </html>
-
-
-
-
-
-<!--div class="container">
-    <div id="quiz-box">
-        <p class="breadcrumbs">Question <?php?> of #</p>
-        <p class="quiz">What is 54 + 71?</p>
-        <form action="index.html" method="post">
-            <input type="hidden" name="id" value="0" />
-            <input type="submit" class="btn" name="answer" value="135" />
-            <input type="submit" class="btn" name="answer" value="125" />
-            <input type="submit" class="btn" name="answer" value="115" />
-        </form>
-    </div>
-</div>
-<form action="index.php" method="GET">
-  <input type="submit" value="Try Again?">
-</form>
