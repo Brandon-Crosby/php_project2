@@ -10,12 +10,11 @@ $question_num = filter_input(INPUT_GET, 'p', FILTER_SANITIZE_NUMBER_INT);
 if (empty ($question_num)){
     $question_num = 1;
 }
-$total=10;
 
 if ($question_num <= 10) {
     // Show random question
 // Show which question they are on
-    echo "<p class='breadcrumbs'> Question ". $question_num . " of " . $total . "</p>";
+    echo "<p class='breadcrumbs'> Question ". $question_num . " of 10 </p>";
     echo '<form method = "post" action="index.php?p='. ($question_num + 1) . '" />';
 // Show random question
     echo "<p class='quiz'> What is " . $leftAdder . "+" . $rightAdder . "? </p>";
@@ -28,7 +27,7 @@ shuffle($answers);
     echo '</form>';
 // Show score
 }elseif ($question_num == 11) {
-    echo '<h1> You got '. $_SESSION['numberCorrect']. ' out of '. $total. ' correct!</h1>';
+    echo '<h1> You got '. $_SESSION['numberCorrect']. ' out of 10 correct!</h1>';
     echo "<form action='index.php' method='GET'>";
     echo "<input type='submit' class='btn' name='restart' value='Try Again?'>";
     session_destroy();
