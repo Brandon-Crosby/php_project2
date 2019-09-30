@@ -53,8 +53,8 @@ body {
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #FFF;
-  color: #000;
+  background-color: inherit;
+  color: inherit;
 }
 
 .btn:focus {
